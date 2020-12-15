@@ -35,6 +35,11 @@ var students = [
   minTasksDone: 100
 }
 
+console.log(students[2].tasksDone)
+
+function praiseHardworkersBashLazyStudents() {
+
+}
 
 // Zad 5
 function sumArrays() {}
