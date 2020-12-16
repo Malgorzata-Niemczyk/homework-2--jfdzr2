@@ -150,7 +150,17 @@ function ageDifferences() {}
 
 
 // Zad 12
-function gimmeMiddleIndex() {}
+const numArray1 = [2, 3, 1];
+const numArray2 = [5, 10, 14];
+
+function gimmeMiddleIndex(arr) {
+  const theMiddle = Math.round(arr.length -1) / 2;
+
+  return theMiddle;
+}
+
+console.log(gimmeMiddleIndex(numArray1));
+console.log(gimmeMiddleIndex(numArray2));
 
 
 
