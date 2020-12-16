@@ -54,12 +54,13 @@ const arr1 = [1, 2]
 const arr2 = [3, 4]
 const newArr = arr1.concat(arr2)
 
-console.log(newArr)
+// console.log(newArr)
 
-const sumArrays = () => {
+const sumArrays = newArr.reduce((a, b) => {
+  return a + b
+})
 
-}
-
+console.log(sumArrays)
 
 
 
