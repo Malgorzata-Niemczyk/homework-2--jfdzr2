@@ -55,7 +55,15 @@ function getInitials(name) {
 console.log(getInitials('Harry Potter'))
 
 // Zad 3
-function sumPositives() {}
+const mixedArr1 = [1,2,3,4,5];
+const mixedArr2 = [1,-2,3,4,5];
+const mixedArr3 = [-1,-2,-3,-4,-5];
+const mixedArr4 = [-1,2,3,4,-5];
+const emptyArr = [];
+
+function sumPositives() {
+
+}
 
 
 
