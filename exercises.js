@@ -12,10 +12,17 @@ function sumNumbers() {
 }
 
 
-
 // Zad 2
-function getInitials() {}
+function getInitials(name) { 
+    const nameArr = name.split(' ');
 
+    const firstInit = nameArr.shift().charAt(0).toUpperCase();
+    const lastInit = nameArr.pop().charAt(0).toUpperCase();
+
+    return `${firstInit}.${lastInit}.`;
+}
+
+console.log(getInitials('Harry Potter'))
 
 // Zad 3
 function sumPositives() {}
