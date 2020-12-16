@@ -50,7 +50,12 @@ function praiseHardworkersBashLazyStudents(student) {
 console.log(students.filter(praiseHardworkersBashLazyStudents))
 
 // Zad 5
-function sumArrays() {}
+const arr1 = [1, 2]
+const arr2 = [3, 4]
+
+function sumArrays () {
+  
+}
 
 
 
