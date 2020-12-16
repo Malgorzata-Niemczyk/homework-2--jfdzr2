@@ -132,8 +132,16 @@ function multiplyTable() {}
 
 
 // Zad 10
-function canDivideBy() {}
+function canDivideBy(initNum, divisor1, divisor2) {
+ if (initNum % divisor1 === 0 && initNum % divisor2 === 0) {
+    return true;
+ } else {
+   return false;
+ };
+};
 
+console.log(canDivideBy(-12, 2, -6));
+console.log(canDivideBy(-12, 2, -5));
 
 
 // Zad 11
