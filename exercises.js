@@ -61,11 +61,21 @@ const mixedArr3 = [-1,-2,-3,-4,-5];
 const mixedArr4 = [-1,2,3,4,-5];
 const emptyArr = [];
 
-function sumPositives() {
+function sumPositives(arr) {
+  const positiveNum = arr.filter(value => {
+    return (value > 0);
+  })
+  
+  const sum = positiveNum.reduce((a, b) => {
+    return (a + b);
+  });
+  
+  return sum;
+};
 
-}
-
-
+console.log(sumPositives(mixedArr1));
+console.log(sumPositives(mixedArr2));
+console.log(sumPositives(mixedArr4));
 
 //BONUS
 function countPositivesAndSumNegatives() {
