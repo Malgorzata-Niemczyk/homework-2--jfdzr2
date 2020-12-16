@@ -52,10 +52,14 @@ console.log(students.filter(praiseHardworkersBashLazyStudents))
 // Zad 5
 const arr1 = [1, 2]
 const arr2 = [3, 4]
+const newArr = arr1.concat(arr2)
 
-function sumArrays () {
-  
+console.log(newArr)
+
+const sumArrays = () => {
+
 }
+
 
 
 
