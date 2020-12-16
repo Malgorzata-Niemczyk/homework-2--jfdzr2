@@ -47,6 +47,8 @@ function praiseHardworkersBashLazyStudents(student) {
   }
 }
 
+console.log(students.filter(praiseHardworkersBashLazyStudents))
+
 // Zad 5
 function sumArrays() {}
 
