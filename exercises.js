@@ -35,10 +35,16 @@ var students = [
   minTasksDone: 100
 }
 
-console.log(students[2].tasksDone)
+//console.log(students[2].tasksDone)
 
-function praiseHardworkersBashLazyStudents() {
-
+function praiseHardworkersBashLazyStudents(student) {
+  switch (true) {
+    case (student.tasksDone >= 100 && student.hoursSpent >= 80):
+      console.log(`${student.name} - gratulacje! Ciężka praca popłaca!`);
+      break;
+      default:
+        console.log(`${student.name} - DO ROBOTY LENIE!`)
+  }
 }
 
 // Zad 5
