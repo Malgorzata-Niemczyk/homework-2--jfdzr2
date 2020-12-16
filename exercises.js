@@ -70,20 +70,10 @@ function canYouPlayBanjo() {}
 
 // Zad 7
 function reverseString(str) {
- 
-  const splitString = str.split('');
-  // console.log(splitString);
+  return str.split('').reverse('').join('');
+};
 
-  const reverseArray = splitString.reverse('');
-  //console.log(reverseArray);
-
-  const joinArray = reverseArray.join('');
-  // console.log(joinArray)
-
-  return joinArray
-}
-
-console.log(reverseString('world'))
+console.log(reverseString('world'));
 
 
 // Zad 8
