@@ -42,8 +42,8 @@ function praiseHardworkersBashLazyStudents(student) {
     case (student.tasksDone >= 100 && student.hoursSpent >= 80):
       console.log(`${student.name} - gratulacje! Ciężka praca popłaca!`);
       break;
-      default:
-        console.log(`${student.name} - DO ROBOTY LENIE!`)
+    default:
+      console.log(`${student.name} - DO ROBOTY LENIE!`)
   }
 }
 
