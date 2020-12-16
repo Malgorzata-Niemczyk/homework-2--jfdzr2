@@ -3,6 +3,13 @@ const arrA = [9, 3, '7', '3'];
 const arrB = ['5', '0', 9, 3, 2, 1, '9', 6, 7];
 const arrC = ['3', 6, 6, 0, '5', 8, 5, '6', 2,'0'];
 
+const toNumArrA = arrA.map(Number);
+//console.log(toNumArrA);
+const toNumArrB = arrB.map(Number);
+//console.log(toNumArrB);
+const toNumArrC = arrC.map(Number);
+//console.log(toNumArrC)
+
 //Zad 1 - część 1
 function sumElements() {
  
