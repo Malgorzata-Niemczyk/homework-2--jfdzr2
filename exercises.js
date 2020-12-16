@@ -11,9 +11,16 @@ const toNumArrC = arrC.map(Number);
 //console.log(toNumArrC)
 
 //Zad 1 - część 1
-function sumElements() {
- 
-}
+function sumElements(arr) {
+  const sum = arr.reduce((a, b) => {
+    return a + b;
+  }, 0);
+  return sum;
+};
+
+console.log(sumElements(toNumArrA));
+console.log(sumElements(toNumArrB));
+console.log(sumElements(toNumArrC))
 
 //Zad 1 - część 2
 function sumNumbers(arr) {
