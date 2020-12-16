@@ -3,14 +3,30 @@ const arrA = [9, 3, '7', '3'];
 const arrB = ['5', '0', 9, 3, 2, 1, '9', 6, 7];
 const arrC = ['3', 6, 6, 0, '5', 8, 5, '6', 2,'0'];
 
+//Zad 1 - część 1
 function sumElements() {
  
 }
 
-function sumNumbers() {
+//Zad 1 - część 2
+function sumNumbers(arr) {
+  const numbers = arr.filter(value => {
+    if (typeof(value) === 'number') {
+      return value;
+    }
+  })
+  //console.log(numbers)
+  
+  let total = 0;
+  for (let num in numbers) {
+      total += numbers[num]
+  }
+  return total
+};
 
-}
-
+console.log(sumNumbers(arrA));
+console.log(sumNumbers(arrB));
+console.log(sumNumbers(arrC));
 
 // Zad 2
 function getInitials(name) { 
