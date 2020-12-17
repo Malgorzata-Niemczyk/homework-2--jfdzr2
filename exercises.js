@@ -159,8 +159,21 @@ console.log(reverseString('world'));
 
 
 // Zad 8
-function enough() {}
+function enough(capacity, onBoard, waiting) {
 
+  const hasSpace = `${capacity - (onBoard + waiting)}`;
+
+  if (hasSpace >= 0) {
+    return `${hasSpace}, all ${waiting} passengers can get in.`;
+  } else {
+    const posValue = Math.abs(hasSpace);
+    return `${posValue}, ${posValue} out of ${waiting} won't get in.`;
+  };
+};
+
+console.log(enough(10, 5, 5));
+console.log(enough(10, 2, 5));
+console.log(enough(10, 7, 5));
 
 
 // Zad 9
