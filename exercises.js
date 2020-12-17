@@ -170,8 +170,20 @@ console.log(canDivideBy(-12, 2, -5));
 
 
 // Zad 11
-function ageDifferences() {}
+const age = [82, 15, 6, 38, 35]
 
+function ageDifferences() {
+  const theOldest = Math.max(...age);
+  console.log(`Najstarszy domownik ma ${theOldest} lat.`)
+
+  const theYoungest = Math.min(...age);
+  console.log((`Najmłodszy domownik ma ${theYoungest} lat.`))
+
+  const ageDiff = `${theOldest}` - `${theYoungest}`
+  console.log(`Różnica wieku między najstarszym a najmłodszym domownikiem wynosi ${ageDiff} lat.`)
+}
+
+ageDifferences()
 
 
 // Zad 12
@@ -181,11 +193,11 @@ const numArray2 = [5, 10, 14];
 function gimmeMiddleIndex(arr) {
   const theMiddle = Math.round(arr.length -1) / 2;
 
-  return theMiddle;
+  console.log(theMiddle);
 }
 
-console.log(gimmeMiddleIndex(numArray1));
-console.log(gimmeMiddleIndex(numArray2));
+gimmeMiddleIndex(numArray1);
+gimmeMiddleIndex(numArray2);
 
 
 
