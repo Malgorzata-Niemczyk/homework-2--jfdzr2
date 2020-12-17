@@ -133,7 +133,19 @@ console.log(sumArrays)
 
 
 // Zad 6
-function canYouPlayBanjo() {}
+function canYouPlayBanjo(name) {
+  if (name.startsWith('R') || name.startsWith('r') || name.includes('r')) {
+    console.log(`${name} umie grać na banjo :)`)
+  } else {
+    console.log(`${name} nie umie grać na banjo :(`)
+  }
+}
+
+canYouPlayBanjo('Tomek');
+canYouPlayBanjo('Darek');
+canYouPlayBanjo('Robert');
+canYouPlayBanjo('Kasia');
+canYouPlayBanjo('radek');
 
 
 
@@ -224,8 +236,8 @@ const people = [
   { name: 'Santa', wasNice: true }
 ] 
 
-function getNiceNames(person){
-  
+function getNiceNames() {
+
 }
 
 function getNaughtNames() {
