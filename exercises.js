@@ -59,10 +59,10 @@ console.log(getInitials('Harry Potter'))
 
 
 // Zad 3
-const mixedArr1 = [1,2,3,4,5];
-const mixedArr2 = [1,-2,3,4,5];
-const mixedArr3 = [-1,-2,-3,-4,-5];
-const mixedArr4 = [-1,2,3,4,-5];
+const mixedArr1 = [1, 2, 3 ,4, 5];
+const mixedArr2 = [1,-2, 3, 4, 5];
+const mixedArr3 = [-1, -2, -3, -4, -5];
+const mixedArr4 = [-1, 2, 3, 4,-5];
 const emptyArr = [];
 
 function sumPositives(arr) {
@@ -82,9 +82,37 @@ console.log(sumPositives(mixedArr2));
 console.log(sumPositives(mixedArr4));
 
 //BONUS
-function countPositivesAndSumNegatives() {
+function countPositivesAndSumNegatives(numbers) {
   // returns [positivesCount, negativeSum]
-}
+  const positives = [];
+  const negatives = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+      positives.push(numbers[i]);
+    } else {
+      negatives.push(numbers[i]);
+    }
+  }
+  
+  // console.log(positives);
+  // console.log(negatives);
+
+ const positivesCount = positives.length;
+
+ const negativeSum = negatives.reduce((a, b) => {
+     return (a + b)
+   });
+
+ return `
+    Sum of negative numbers: ${negativeSum},
+    The count of the positive numbers: ${positivesCount}
+  `
+};
+
+console.log(countPositivesAndSumNegatives(mixedArr2));
+console.log(countPositivesAndSumNegatives(mixedArr3));
+console.log(countPositivesAndSumNegatives(mixedArr4));
 
 
 
