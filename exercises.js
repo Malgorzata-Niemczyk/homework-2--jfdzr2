@@ -42,6 +42,8 @@ console.log(sumNumbers(arrA));
 console.log(sumNumbers(arrB));
 console.log(sumNumbers(arrC));
 
+
+
 // Zad 2
 function getInitials(name) { 
     const nameArr = name.split(' ');
@@ -53,6 +55,8 @@ function getInitials(name) {
 }
 
 console.log(getInitials('Harry Potter'))
+
+
 
 // Zad 3
 const mixedArr1 = [1,2,3,4,5];
@@ -127,8 +131,10 @@ const sumArrays = newArr.reduce((a, b) => {
 console.log(sumArrays)
 
 
+
 // Zad 6
 function canYouPlayBanjo() {}
+
 
 
 // Zad 7
@@ -137,6 +143,7 @@ function reverseString(str) {
 };
 
 console.log(reverseString('world'));
+
 
 
 // Zad 8
@@ -193,6 +200,16 @@ function checkExam() {}
 
 
 // Zad 15
-function getNiceNames(){}
+const people = [
+  { name: 'Kursant czytający ten tekst', wasNice: true },
+  { name: 'Jack Mehoff', wasNice: false },
+  { name: 'Santa', wasNice: true }
+] 
 
-function getNaughtNames() {}
+function getNiceNames(person){
+  
+}
+
+function getNaughtNames() {
+
+}
