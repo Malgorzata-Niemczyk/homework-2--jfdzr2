@@ -266,7 +266,12 @@ function whatsMySuperVillainName() {}
 
 
 // Zad 14
-function checkExam() {}
+const teacherAnswers = ["a", "a", "b", "b"];
+const studentAnswers = ["a", "a", "b", "d"];
+
+function checkExam() {
+
+}
 
 
 
@@ -280,6 +285,20 @@ const people = [
 function getNiceNames() {
 
 }
+
+/*
+function getNiceNames(person) {
+  let nicePeople = [];
+
+  if (person.wasNice === true) {
+     return nicePeople.push(person.name);
+  } else {
+    return nicePeople = [];
+  }
+}
+
+console.log(getNiceNames())
+*/
 
 function getNaughtNames() {
 
