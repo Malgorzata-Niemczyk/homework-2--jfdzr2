@@ -261,6 +261,34 @@ gimmeMiddleIndex(numArray2);
 
 
 // Zad 13
+const months = [
+  { month: 'January', firstName: 'The Evil' },
+  { month: 'February', firstName: 'The Awkward' },
+  { month: 'March', firstName: 'The Vile' },
+  { month: 'April', firstName: 'The Cruel' },
+  { month: 'May', firstName: 'The Trashy' },
+  { month: 'June', firstName: 'The Despicable' },
+  { month: 'July', firstName: 'The Embarrassing' },
+  { month: 'August', firstName: 'The Disreputable' },
+  { month: 'September', firstName: 'The Atrocious' },
+  { month: 'October', firstName: 'The Twirling' },
+  { month: 'November', firstName: 'The Orange' },
+  { month: 'December', firstName: 'The Terrifying' }
+]
+
+const days = [
+  { day: 1, lastName: 'Mustache' },
+  { day: 2, lastName: 'Pickle' },
+  { day: 3, lastName: 'Hood Ornament' },
+  { day: 4, lastName: 'Raisin' },
+  { day: 5, lastName: 'Recycling Bin' },
+  { day: 6, lastName: 'Potato' },
+  { day: 7, lastName: 'Tomato' },
+  { day: 8, lastName: 'House Cat' },
+  { day: 9, lastName: 'Teaspoon' },
+  { day: 10, lastName: 'Laundry Basket' },
+]
+
 function whatsMySuperVillainName() {}
 
 
