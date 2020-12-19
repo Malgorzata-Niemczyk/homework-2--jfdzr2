@@ -20,7 +20,7 @@ function sumElements(arr) {
 
 console.log(sumElements(toNumArrA));
 console.log(sumElements(toNumArrB));
-console.log(sumElements(toNumArrC))
+console.log(sumElements(toNumArrC));
 
 //Zad 1 - część 2
 function sumNumbers(arr) {
@@ -54,7 +54,7 @@ function getInitials(name) {
     return `${firstInit}.${lastInit}.`;
 }
 
-console.log(getInitials('Harry Potter'))
+getInitials('Harry Potter');
 
 
 
@@ -123,26 +123,36 @@ var students = [
   {name: 'Krystek', tasksDone: 100, hoursSpent: 80},
   {name: 'Seba', tasksDone: 200, hoursSpent: 40},
   {name: 'Dagmara', tasksDone: 50, hoursSpent: 100}
-]
+];
 
  var requirements = {
   minHoursSpent: 80,
   minTasksDone: 100
-}
+};
 
 //console.log(students[2].tasksDone)
 
-function praiseHardworkersBashLazyStudents(student) {
-  switch (true) {
-    case (student.tasksDone >= 100 && student.hoursSpent >= 80):
-      console.log(`${student.name} - gratulacje! Ciężka praca popłaca!`);
-      break;
-    default:
-      console.log(`${student.name} - DO ROBOTY LENIE!`)
-  }
+function praiseHardworkersBashLazyStudents() {
+  let praisedStudents = [];
+  let bashedStudents = [];
+
+  for (let student of students) {
+    switch (true) {
+      case (student.tasksDone >= 100 && student.hoursSpent >= 80):
+        praisedStudents.push(student.name);
+        break;
+      default:
+        bashedStudents.push(student.name);
+    };
+  };
+
+  return `
+      ${praisedStudents} - gratulacje, ciężka praca popłaca! 
+      ${bashedStudents} - DO ROBOTY LENIE!
+    `
 }
 
-console.log(students.filter(praiseHardworkersBashLazyStudents))
+praiseHardworkersBashLazyStudents();
 
 
 // Zad 5
@@ -156,7 +166,7 @@ const sumArrays = newArr.reduce((a, b) => {
   return a + b
 })
 
-console.log(sumArrays)
+console.log(sumArrays);
 
 
 
@@ -182,7 +192,7 @@ function reverseString(str) {
   return str.split('').reverse('').join('');
 };
 
-console.log(reverseString('world'));
+reverseString('world');
 
 
 
@@ -326,7 +336,7 @@ function getNiceNames() {
   return `The list of nice people: ${nicePeople}.`
 };
 
-console.log(getNiceNames())
+getNiceNames()
 
 
 function getNaughtyNames() {
@@ -343,7 +353,7 @@ function getNaughtyNames() {
   return `The list of naughty peope: ${naughtyPeople}.`
 };
 
-console.log(getNaughtyNames())
+getNaughtyNames()
 
 //proponowane rozwiązanie Zad 15 - by obie funckjce napisać w jednej:
 function getNiceAndNaughtyNames() {
@@ -371,4 +381,4 @@ function getNiceAndNaughtyNames() {
   `
 };
 
-console.log(getNiceAndNaughtyNames())
+getNiceAndNaughtyNames()
