@@ -344,3 +344,31 @@ function getNaughtyNames() {
 };
 
 console.log(getNaughtyNames())
+
+//proponowane rozwiązanie Zad 15 - by obie funckjce napisać w jednej:
+function getNiceAndNaughtyNames() {
+  let nicePeople = [];
+  let naughtyPeople = [];
+
+
+  for (i = 0; i < people.length; i++) {
+    
+    switch (true) {
+      case (people[i].wasNice === true):
+        nicePeople.push(people[i].name);
+        break;
+      case (people[i].wasNice === false):
+        naughtyPeople.push(people[i].name);;
+        break;
+      default:
+        return [];
+    }
+  }
+
+  return `
+    List of nice people: ${nicePeople}.
+    List of naughty people: ${naughtyPeople}.
+  `
+};
+
+console.log(getNiceAndNaughtyNames())
