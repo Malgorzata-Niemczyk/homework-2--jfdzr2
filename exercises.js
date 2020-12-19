@@ -289,7 +289,9 @@ const days = [
   { day: 10, lastName: 'Laundry Basket' },
 ]
 
-function whatsMySuperVillainName() {}
+function whatsMySuperVillainName() {
+
+}
 
 
 
@@ -308,26 +310,37 @@ const people = [
   { name: 'Kursant czytający ten tekst', wasNice: true },
   { name: 'Jack Mehoff', wasNice: false },
   { name: 'Santa', wasNice: true }
-] 
+]; 
 
 function getNiceNames() {
-
-}
-
-/*
-function getNiceNames(person) {
   let nicePeople = [];
 
-  if (person.wasNice === true) {
-     return nicePeople.push(person.name);
-  } else {
-    return nicePeople = [];
-  }
-}
+  for (i = 0; i < people.length; i++) {
+    if (people[i].wasNice === true) {
+      nicePeople.push(people[i].name);
+    } else {
+      [];
+    };
+  };
+
+  return `The list of nice people: ${nicePeople}.`
+};
 
 console.log(getNiceNames())
-*/
 
-function getNaughtNames() {
 
-}
+function getNaughtyNames() {
+  let naughtyPeople = [];
+
+  for (let person of people) {
+    if (person.wasNice === false) {
+      naughtyPeople.push(person.name);
+    } else {
+      [];
+    };
+  };
+
+  return `The list of naughty peope: ${naughtyPeople}.`
+};
+
+console.log(getNaughtyNames())
