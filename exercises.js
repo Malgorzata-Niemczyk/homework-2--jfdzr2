@@ -287,22 +287,32 @@ const months = [
 ]
 
 const days = [
-  { day: 1, lastName: 'Mustache' },
-  { day: 2, lastName: 'Pickle' },
-  { day: 3, lastName: 'Hood Ornament' },
-  { day: 4, lastName: 'Raisin' },
-  { day: 5, lastName: 'Recycling Bin' },
-  { day: 6, lastName: 'Potato' },
-  { day: 7, lastName: 'Tomato' },
-  { day: 8, lastName: 'House Cat' },
-  { day: 9, lastName: 'Teaspoon' },
-  { day: 10, lastName: 'Laundry Basket' },
+  { day: 0, lastName: 'Mustache' },
+  { day: 1, lastName: 'Pickle' },
+  { day: 2, lastName: 'Hood Ornament' },
+  { day: 3, lastName: 'Raisin' },
+  { day: 4, lastName: 'Recycling Bin' },
+  { day: 5, lastName: 'Potato' },
+  { day: 6, lastName: 'Tomato' },
+  { day: 7, lastName: 'House Cat' },
+  { day: 8, lastName: 'Teaspoon' },
+  { day: 9, lastName: 'Laundry Basket' },
 ]
 
-function whatsMySuperVillainName() {
+function whatsMySuperVillainName(date) {
   
-}
+  let month = months[date.getMonth()].firstName;
+  // console.log(month)
 
+  let day = days[date.getDate()].lastName;
+  // console.log(day)
+
+  return `Your super villain name is: ${month} ${day}`;
+};
+
+console.log(whatsMySuperVillainName(new Date('May 3')));
+console.log(whatsMySuperVillainName(new Date('December 9')));
+console.log(whatsMySuperVillainName(new Date('February 5')));
 
 // Zad 14
 const teacher1 = ["a", "a", "b", "b"];
@@ -319,7 +329,7 @@ function checkExam(studentArr, teacherArr) {
       examScore = examScore + 2;
     } else if (studentArr[i] !== teacherArr[i] && studentArr[i] !== "") {
       examScore = examScore -1;
-    } else /*(studentArr[i] !== teacherArr[i] && studentArr[i] == "") */ { 
+    } else /* (studentArr[i] !== teacherArr[i] && studentArr[i] == "") */ { 
       examScore = 0;
     }
   }
