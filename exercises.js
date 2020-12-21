@@ -300,19 +300,34 @@ const days = [
 ]
 
 function whatsMySuperVillainName() {
-
+  
 }
-
 
 
 // Zad 14
-const teacherAnswers = ["a", "a", "b", "b"];
-const studentAnswers = ["a", "a", "b", "d"];
+const teacher1 = ["a", "a", "b", "b"];
+const student1 = ["a", "a", "b", "d"];
 
-function checkExam() {
+const teacher2 = ["b", "c", "b", "a"];
+const student2 = ["",  "c", "a", "c"];
 
-}
+function checkExam(studentArr, teacherArr) {
+  let examScore = 0;
 
+  for (i = 0; i < studentArr.length; i++) {
+    if ( studentArr[i] === teacherArr[i]) {
+      examScore = examScore + 2;
+    } else if (studentArr[i] !== teacherArr[i] && studentArr[i] !== "") {
+      examScore = examScore -1;
+    } else /*(studentArr[i] !== teacherArr[i] && studentArr[i] == "") */ { 
+      examScore = 0;
+    }
+  }
+  return `Your exam score is: ${examScore}`;
+};
+
+console.log(checkExam(student1, teacher1));
+console.log(checkExam(student2, teacher2));
 
 
 // Zad 15
