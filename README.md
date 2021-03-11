@@ -274,7 +274,3 @@ getNaughtyNames( [
 5 pkt za zrobienie wszystkich zadań ( za 10 zadań zrobiony 3 pkt, za 5 zadań zrobionych 1 pkt ).
 
 1 pkt dodatkowy za rozwiązanie bonusów.
-
-## Termin: 22.12.2020 00:00
-
-## Na pytania odnośnie pracy domowej przestaję odpowiadać od 20.12.2020 18:00, czyli od naszych zajęć :)
